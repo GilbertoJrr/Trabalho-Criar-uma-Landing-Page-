@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho de construção Web - Criar uma Landing Page</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="curriculo.html">Currículo</a></li>
+                <li><a href="github.html">Github</a></li>
+                <li><a href="serviços.html">Serviços</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+<section id="contato">
+    <div class="container">
+        <h1>Contato</h1>
+        <script src="formvalidacao.js"></script>
+        <form id="Trabalho de construção Web\formvalidacao.js" onsubmit="return validarFormulario();">
+                <table class="contato">
+                    <tr>
+                        <td><label for="nome">Nome completo:</label></td>
+                        <td><input type="text" id="nome" name="nome" class="imput-texto" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="telefone">Telefone:</label></td>
+                        <td><input type="tel" id="telefone" name="telefone" class="imput-texto" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">E-mail:</label></td>
+                        <td><input type="email" id="email" name="email" class="imput-texto" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="tipo">Pessoa Física ou Jurídica:</label></td>
+                        <td>
+                            <input type="radio" id="pessoa_fisica" name="tipo" value="Pessoa Física"> Pessoa Física
+                            <input type="radio" id="pessoa_juridica" name="tipo" value="Pessoa Jurídica"> Pessoa Jurídica
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="horario_contato">Melhor horário de contato:</label></td>
+                        <td>    
+                            <input type="radio" id="manha" name="turno" value="manha"> Manhã
+                            <input type="radio" id="tarde" name="turno" value="tarde"> Tarde
+                            <input type="radio" id="noite" name="turno" value="noite"> Noite
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="tipo_servico">Tipo de serviço desejado:</label></td>
+                        <td>
+                            <select id="tipo_servico" name="tipo_servico">
+                                <option value="pgestatica">Página Estática HTML e CSS</option>
+                                <option value="pgdinamica">Página Dinâmica</option>
+                                <option value="pgsuperavançada">Página Super Avançada</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="descricao_servico">Descrição do serviço desejado:</label></td>
+                        <td><textarea id="descricao_servico" name="descricao_servico" rows="1" cols="50" class="imput-txtarea"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="submit" value="Enviar" onclick="validarFormulario()">
+                            <input type="reset" value="Limpar">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+</section>
+<footer>
+    <p>&copy; 2023 Gilberto Teixeira Guedes Junior. Todos os direitos reservados.</p>
+</footer>
+</body>
+</html>
